@@ -1,5 +1,9 @@
+
+
 npm(1) -- node package manager
 ==============================
+
+**Importante**: Este es un fork _oficial_ donde se mantiene la documentación en español de npm, si sientes que puedes ayudar "clona" este repositorio y manda tu pull request, para que de esta manera sea posible enviar los cambios al repositorio original.
 
 ## SYNOPSIS
 
