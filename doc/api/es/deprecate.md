@@ -1,31 +1,33 @@
-npm-deprecate(3) -- Deprecate a version of a package
-====================================================
+npm-deprecate(3) -- Depreciar la versión de un paquete
+======================================================
 
-## SYNOPSIS
+## SINOPSIS
 
     npm.commands.deprecate(args, callback)
 
-## DESCRIPTION
+## DESCRIPCIÓN
 
-This command will update the npm registry entry for a package, providing
-a deprecation warning to all who attempt to install it.
+Este comando actualizará la entrada de un paquete en el registro de npm, 
+proporcionando una advertencia de depreciación en cada atento de installación 
+del paquete. 
 
-The 'args' parameter must have exactly two elements:
+
+El parámetro 'args' debe tener exactamente dos elementos:
 
 * `package[@version]`
 
-    The `version` portion is optional, and may be either a range, or a
-    specific version, or a tag.
+    La porción de `version` es opcional, y puede ser un rango, una versión especifíca
+    o una etiqueta.
 
 * `message`
 
-    The warning message that will be printed whenever a user attempts to
-    install the package.
+    El mensaje de advertencia que sera mostrado cuando un usuario intente instalar el
+    paquete.
 
-Note that you must be the package owner to deprecate something.  See the
-`owner` and `adduser` help topics.
+Nota que tu debes ser el propietario del paquete para depreciar algo. Véase 
+`owner` y `adduser` temas de ayuda.
 
-## SEE ALSO
+## VÉASE TAMBIÉN
 
 * npm-publish(3)
 * npm-unpublish(3)

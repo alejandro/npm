@@ -1,22 +1,24 @@
-npm-commands(3) -- npm commands
-===============================
+npm-commands(3) -- comandos de npm
+================================== 
 
-## SYNOPSIS
+## SINOPSIS
 
-    npm.commands[<command>](args, callback)
+    npm.commands[<comando>](args, callback)
 
-## DESCRIPTION
+## DESCRIPCIÓN
 
-npm comes with a full set of commands, and each of the commands takes a
-similar set of arguments.
+npm viene con una serie completa de comandos, y cada uno de ellos toma
+una serie de argumentos similares.
 
-In general, all commands on the command object take an **array** of positional
-argument **strings**. The last argument to any function is a callback. Some
-commands are special and take other optional arguments.
+En general, todos los comandos en el objeto `command` toma un array de 
+argumentos **strings** posicionales. El último de los argumentos para 
+culquier función es un `callback`. Algunos comandos son especiales y 
+necesitan otros argumentos opcionales.
 
-All commands have their own man page. See `man npm-<command>` for command-line
-usage, or `man 3 npm-<command>` for programmatic usage.
+Todos los comandos tienen su propia página man. Mira `man npm-<comando>` 
+para el uso en la linea de comandos, ó `man 3 npm-<comando>` para el uso 
+programático.
 
-## SEE ALSO
+## VÉASE TAMBIÉN
 
 * npm-index(1)

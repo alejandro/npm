@@ -1,13 +1,13 @@
-npm-bin(3) -- Display npm bin folder
-====================================
+npm-bin(3) -- Muestra la ubicación del bin de npm
+=================================================
 
-## SYNOPSIS
+## SINOPSIS
 
     npm.commands.bin(args, cb)
 
-## DESCRIPTION
+## DESCRIPCIÓN
 
-Print the folder where npm will install executables.
+Imprime el folder donde npm instalara archivos autoejecutables.
 
-This function should not be used programmatically.  Instead, just refer
-to the `npm.bin` member.
+Esta función no debe ser usada programaticamente. Usa solamente la referencia 
+para el miembro `npm.bin`.

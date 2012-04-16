@@ -1,19 +1,19 @@
-npm-bugs(3) -- Bugs for a package in a web browser maybe
-========================================================
+npm-bugs(3) -- Muestra en el navegador los bugs acerca de un paquete
+====================================================================
 
-## SYNOPSIS
+## SINOPSIS
 
-    npm.commands.bugs(package, callback)
+    npm.commands.bugs(paquete, callback)
 
-## DESCRIPTION
+## DESCRIPCIÓN
 
-This command tries to guess at the likely location of a package's
-bug tracker URL, and then tries to open it using the `--browser`
-config param.
+Este comando trata de encontrar, en el directorio actual, la URL donde 
+se encuentra el `bug tracker` del paquete, una vez encontrado, trata de
+abrirlo usando el parametro `--browser` de la configuración.
 
-Like other commands, the first parameter is an array. This command only
-uses the first element, which is expected to be a package name with an
-optional version number.
+Como otros comandos, el primer parametro es un array. Este comando solo
+usa el primer elemento, él cual se espera que sea un nombre de paquete
+con un número de versión opcional.
 
-This command will launch a browser, so this command may not be the most
-friendly for programmatic use.
+Este comando lanzara un navegador, así que este comando puede que no sea 
+él más agradable para uso programático.

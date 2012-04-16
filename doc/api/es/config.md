@@ -1,45 +1,48 @@
-npm-config(3) -- Manage the npm configuration files
-===================================================
+npm-config(3) -- Administra los ficheros de configuración de npm
+================================================================
 
-## SYNOPSIS
+## SINOPSIS
 
     npm.commands.config(args, callback)
     var val = npm.config.get(key)
     npm.config.set(key, val)
 
-## DESCRIPTION
+## DESCRIPCIÓN
 
-This function acts much the same way as the command-line version.  The first
-element in the array tells config what to do. Possible values are:
+Esta función actua de manera similar a la versión de la linea de comandos.
+El primer elemento en la array dice a la configuración que hacer. Los valores 
+posibles son:
 
 * `set`
 
-    Sets a config parameter.  The second element in `args` is interpreted as the
-    key, and the third element is interpreted as the value.
+    Establece un parámetro de configuración. El segundo elemento en `args` es
+    interpretado como `key` o clave y el tercer elemento es interpretado como 
+    el valor de la clave.
 
 * `get`
 
-    Gets the value of a config parameter. The second element in `args` is the
-    key to get the value of.
+    Adquiere el valor de un parámetro de la configuración. El segundo elemento en
+    `args` es la `key` ó clave de donde se obtendra el valor.
 
 * `delete` (`rm` or `del`)
 
-    Deletes a parameter from the config. The second element in `args` is the
-    key to delete.
+    Elimina un parámetro de la configuración. El segundo elemento en `args`es la 
+    `key` ó clave a eliminar.
 
 * `list` (`ls`)
 
-    Show all configs that aren't secret. No parameters necessary.
+    Mustra todos los datos de configuración que no son secretos. No se necesita
+    parámetros.
 
 * `edit`:
 
-    Opens the config file in the default editor. This command isn't very useful
-    programmatically, but it is made available.
+    Abre el fichero de configuración en el editor predeterminado. Este comando
+    no es muy útil programáticamente, pero esta disponible.
 
-To programmatically access npm configuration settings, or set them for
-the duration of a program, use the `npm.config.set` and `npm.config.get`
-functions instead.
+Para acceder programáticamente a los ajustos de configuración, o para
+establecerlos durante la duración de un programa, usa mejor las funciones:
+`npm.config.set` y `npm.config.get`.
 
-## SEE ALSO
+## VÉASE TAMBIÉN
 
 * npm(3)

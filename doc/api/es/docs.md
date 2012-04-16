@@ -1,19 +1,19 @@
-npm-docs(3) -- Docs for a package in a web browser maybe
-========================================================
+npm-docs(3) -- Muestra los documentos de un paquete en el navegador
+==================================================================
 
-## SYNOPSIS
+## SINOPSIS
 
     npm.commands.docs(package, callback)
 
-## DESCRIPTION
+## DESCRIPCIÓN
 
-This command tries to guess at the likely location of a package's
-documentation URL, and then tries to open it using the `--browser`
-config param.
+Este comando trata de adivinar, en la ubicación actual,  la URL de la
+documentación de un paquete, luego trata de abrir la dirección usando 
+el párametro de configuración `--browser`.
 
-Like other commands, the first parameter is an array. This command only
-uses the first element, which is expected to be a package name with an
-optional version number.
+Como otros comandos, el primer parametro es un array. Este comando solo
+usa el primer elemento, él cual se espera que sea un nombre de paquete
+con un número de versión opcional.
 
-This command will launch a browser, so this command may not be the most
-friendly for programmatic use.
+Este comando lanzara un navegador, así que este comando puede que no sea 
+él más agradable para uso programáti
